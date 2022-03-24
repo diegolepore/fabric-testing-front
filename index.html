@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <button id="togglePan">Toggle Pan</button>
+    <button id="toggleDrawing">Toggle Drawing</button>
+    <input id="colorPicker" type="color">
+    <button id="clearBtn">Clear</button>
+    <button id="restore">Restore</button>
+    
+    <canvas id="canvas"></canvas>
+
+    <div id="objectButtons">
+      <p id="objectTitle">Objects</p>
+      <button id="rect">Rect</button>
+      <button id="circ">Circ</button>
+      
+      <button id="group">Group</button>
+      <button id="ungroup">Ungroup</button>
+    </div>
+
+
+    <div class="buttonsWrapper">
+      <p class="buttonsTitle">Image</p>
+      <input id="myImg" type="file" accept="image/*">
+    </div>
+
+    <button id="saveCanvas">Canvas to JSON string</button>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
