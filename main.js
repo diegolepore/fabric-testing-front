@@ -308,7 +308,7 @@ loadCanvas('h02O7zrlN4IzpI7xP1E1')
 setPanEvents(canvas)
 
 
-document.querySelector('#togglePan').addEventListener('click', () => toggleMode(modes.pan))
+// document.querySelector('#togglePan').addEventListener('click', () => toggleMode(modes.pan))
 
 document.querySelector('#toggleDrawing').addEventListener('click', () => toggleMode(modes.drawing))
 
