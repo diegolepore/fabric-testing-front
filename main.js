@@ -226,7 +226,7 @@ function saveCanvas() {
     // convert canvas to a json string
     var json = JSON.stringify( canvas.toJSON() );
 
-    fetch('http://localhost:3333/designs/h02O7zrlN4IzpI7xP1E1', {
+    fetch('https://fabric-testing-node-server.vercel.app/designs/h02O7zrlN4IzpI7xP1E1', {
       method: 'PUT', // *GET, POST, PUT, DELETE, etc.
       mode: 'cors', // no-cors, *cors, same-origin
       headers: {
@@ -290,7 +290,7 @@ setBackgroundImage(
 
 async function loadCanvas(id) {
 
-  fetch(`https://fabric-testing-node-server-1i0sgn5sh-diegolepore.vercel.app/designs/${id}`)
+  fetch(`https://fabric-testing-node-server.vercel.app/designs/${id}`)
   .then(response => response.json())
   .then(data => {
     console.log(data)
